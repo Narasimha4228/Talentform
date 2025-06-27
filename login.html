@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../assets/js/login.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="welcome-section">
+            <h1>Social Media Sentiment Analysis Platform</h1>
+            <p>Unlock insights from social media conversations with our AI-powered sentiment analysis tool. Track brand perception, analyze trends, and understand customer emotions.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i>📊</i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Real-time Analysis</h3>
+                        <p>Monitor social sentiment as it happens</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i>🤖</i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>AI-Powered Insights</h3>
+                        <p>Advanced NLP for accurate emotion detection</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i>📈</i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Trend Visualization</h3>
+                        <p>Interactive dashboards and reports</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i>🔒</i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Secure Data</h3>
+                        <p>Enterprise-grade security and privacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="auth-container">
+            <div class="app-logo">
+                <h2>Sentiment Analyzer</h2>
+                <p>Access your dashboard</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            
+            <button class="auth-btn">Login to Dashboard</button>
+            
+            <div class="auth-links">
+                <a href="#">Forgot Password?</a>
+                <a href="register.html" id="registerLink">Create Account</a>
+            </div>
+            
+            <div class="social-login">
+                <p>Or continue with</p>
+                <div class="social-buttons">
+                    <button class="social-btn google-btn">
+                        <i>G</i> Google
+                    </button>
+                    <button class="social-btn facebook-btn">
+                        <i>f</i> Facebook
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Simple form validation
+        document.querySelector('.auth-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            if(email && password) {
+                // Simulate login process
+                this.textContent = 'Logging in...';
+                this.disabled = true;
+                
+                // In a real app, you would send this to your backend
+                setTimeout(() => {
+                    // Redirect to dashboard after successful login
+                    window.location.href = 'dashboard.html';
+                }, 1200);
+            } else {
+                alert('Please fill in both email and password fields.');
+            }
+        });
+        
+        // Google login button action
+        document.querySelector('.google-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Redirecting to Google login...');
+        });
+        
+        // Register link action
+        document.getElementById('registerLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'register.html';
+        });
+    </script>
+</body>
+</html>

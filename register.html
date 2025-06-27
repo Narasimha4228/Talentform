@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Social Media Analysis</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Create Account</h2>
+        <form id="registerForm" onsubmit="return validateRegister()">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error-message" id="confirmPasswordError"></span>
+            </div>
+            <div class="form-group">
+                <label>Choose Social Media Account</label>
+                <div class="social-choice">
+                    <label><input type="checkbox" name="social" value="twitter"> <i class="fab fa-twitter"></i> Twitter</label>
+                    <label><input type="checkbox" name="social" value="facebook"> <i class="fab fa-facebook"></i> Facebook</label>
+                    <label><input type="checkbox" name="social" value="instagram"> <i class="fab fa-instagram"></i> Instagram</label>
+                    <label><input type="checkbox" name="social" value="youtube"> <i class="fab fa-youtube"></i> YouTube</label>
+                </div>
+            </div>
+            <button type="submit" class="auth-btn">Register</button>
+        </form>
+        <div class="auth-links">
+            <a href="login.html">Already have an account? Login</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="../assets/js/login.js"></script>
+    <script>
+    function validateRegister() {
+        // Basic front-end validation example
+        let valid = true;
+        document.getElementById('usernameError').textContent = '';
+        document.getElementById('emailError').textContent = '';
+        document.getElementById('passwordError').textContent = '';
+        document.getElementById('confirmPasswordError').textContent = '';
+        const username = document.getElementById('username').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+        if (username.length < 3) {
+            document.getElementById('usernameError').textContent = 'Username must be at least 3 characters.';
+            valid = false;
+        }
+        if (!email.match(/^[^@\s]+@[^@\s]+\.[^@\s]+$/)) {
+            document.getElementById('emailError').textContent = 'Enter a valid email.';
+            valid = false;
+        }
+        if (password.length < 6) {
+            document.getElementById('passwordError').textContent = 'Password must be at least 6 characters.';
+            valid = false;
+        }
+        if (password !== confirmPassword) {
+            document.getElementById('confirmPasswordError').textContent = 'Passwords do not match.';
+            valid = false;
+        }
+        return valid;
+    }
+    </script>
+</body>
+</html>

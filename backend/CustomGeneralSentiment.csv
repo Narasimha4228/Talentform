@@ -1,0 +1,219 @@
+text,airline_sentiment
+wrong,negative
+bad,negative
+terrible,negative
+awful,negative
+horrible,negative
+poor,negative
+sad,negative
+hate,negative
+angry,negative
+upset,negative
+unhappy,negative
+fail,negative
+mistake,negative
+incorrect,negative
+worse,negative
+worst,negative
+problem,negative
+issue,negative
+broken,negative
+late,negative
+slow,negative
+boring,negative
+rude,negative
+unhelpful,negative
+unfriendly,negative
+uncomfortable,negative
+noisy,negative
+expensive,negative
+lost,negative
+missed,negative
+cancelled,negative
+not good,negative
+not happy,negative
+not satisfied,negative
+not working,negative
+not helpful,negative
+not friendly,negative
+not comfortable,negative
+not clean,negative
+not on time,negative
+not great,negative
+not amazing,negative
+not excellent,negative
+not positive,negative
+not nice,negative
+not fine,negative
+not pleasant,negative
+not enjoyable,negative
+not tasty,negative
+not smooth,negative
+not relaxing,negative
+not cheerful,negative
+not polite,negative
+not attentive,negative
+not professional,negative
+not quick,negative
+not easy,negative
+not supportive,negative
+not successful,negative
+not correct,negative
+not accurate,negative
+not efficient,negative
+not reliable,negative
+not safe,negative
+not secure,negative
+not fair,negative
+not fun,negative
+not interesting,negative
+not useful,negative
+not valuable,negative
+not helpful,negative
+not friendly,negative
+not comfortable,negative
+not clean,negative
+not on time,negative
+not great,negative
+not amazing,negative
+not excellent,negative
+not positive,negative
+not nice,negative
+not fine,negative
+not pleasant,negative
+not enjoyable,negative
+not tasty,negative
+not smooth,negative
+not relaxing,negative
+not cheerful,negative
+not polite,negative
+not attentive,negative
+not professional,negative
+not quick,negative
+not easy,negative
+not supportive,negative
+not successful,negative
+not correct,negative
+not accurate,negative
+not efficient,negative
+not reliable,negative
+not safe,negative
+not secure,negative
+not fair,negative
+not fun,negative
+not interesting,negative
+not useful,negative
+not valuable,negative
+happy,positive
+good,positive
+excellent,positive
+amazing,positive
+wonderful,positive
+fantastic,positive
+awesome,positive
+nice,positive
+fine,positive
+pleasant,positive
+enjoyable,positive
+tasty,positive
+smooth,positive
+relaxing,positive
+cheerful,positive
+polite,positive
+attentive,positive
+professional,positive
+quick,positive
+easy,positive
+supportive,positive
+successful,positive
+correct,positive
+accurate,positive
+efficient,positive
+reliable,positive
+safe,positive
+secure,positive
+fair,positive
+fun,positive
+interesting,positive
+useful,positive
+valuable,positive
+helpful,positive
+friendly,positive
+comfortable,positive
+clean,positive
+on time,positive
+great,positive
+amazing,positive
+excellent,positive
+positive,positive
+nice,positive
+fine,positive
+pleasant,positive
+enjoyable,positive
+tasty,positive
+smooth,positive
+relaxing,positive
+cheerful,positive
+polite,positive
+attentive,positive
+professional,positive
+quick,positive
+easy,positive
+supportive,positive
+successful,positive
+correct,positive
+accurate,positive
+efficient,positive
+reliable,positive
+safe,positive
+secure,positive
+fair,positive
+fun,positive
+interesting,positive
+useful,positive
+valuable,positive
+average,neutral
+ok,neutral
+okay,neutral
+so-so,neutral
+fine,neutral
+not good,neutral
+not great,neutral
+not terrible,neutral
+not amazing,neutral
+not excellent,neutral
+not positive,neutral
+not negative,neutral
+not nice,neutral
+not fine,neutral
+not pleasant,neutral
+not enjoyable,neutral
+not tasty,neutral
+not smooth,neutral
+not relaxing,neutral
+not cheerful,neutral
+not polite,neutral
+not attentive,neutral
+not professional,neutral
+not quick,neutral
+not easy,neutral
+not supportive,neutral
+not successful,neutral
+not correct,neutral
+not accurate,neutral
+not efficient,neutral
+not reliable,neutral
+not safe,neutral
+not secure,neutral
+not fair,neutral
+not fun,neutral
+not interesting,neutral
+not useful,neutral
+not valuable,neutral
+bad ,negative
+mohan , positive
+lord , positive
+Ravi , positive
+good , positive
+excellent , positive
+average , neutral

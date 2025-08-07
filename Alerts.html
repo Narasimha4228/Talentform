@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSentiment | Alerts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <div class="logo">SS</div>
+            <div class="logo-text">SocialSentiment</div>
+        </div>
+        
+        <nav class="nav-menu">
+            <div class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span class="nav-text">Dashboard</span>
+                    <span class="nav-tooltip">Dashboard</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="analytics.html" class="nav-link">
+                    <i class="fas fa-chart-pie nav-icon"></i>
+                    <span class="nav-text">Analytics</span>
+                    <span class="nav-tooltip">Analytics</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="sentiment.html" class="nav-link">
+                    <i class="fas fa-smile nav-icon"></i>
+                    <span class="nav-text">Sentiment</span>
+                    <span class="nav-tooltip">Sentiment</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="alerts.html" class="nav-link active">
+                    <i class="fas fa-bell nav-icon"></i>
+                    <span class="nav-text">Alerts</span>
+                    <span class="nav-tooltip">Alerts</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="settings.html" class="nav-link">
+                    <i class="fas fa-cog nav-icon"></i>
+                    <span class="nav-text">Settings</span>
+                    <span class="nav-tooltip">Settings</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a href="#" class="nav-link" id="logout-btn">
+                    <i class="fas fa-sign-out-alt nav-icon"></i>
+                    <span class="nav-text">Logout</span>
+                    <span class="nav-tooltip">Logout</span>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search alerts...">
+            </div>
+            
+            <div class="user-menu">
+                <div class="header-action notification-bell">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="header-action">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="header-action">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="user-avatar">
+                    <div>
+                        <div class="user-name">Sarah Johnson</div>
+                        <div class="user-role">Admin</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <h1 class="page-title">
+            <i class="fas fa-bell"></i>
+            Alerts & Notifications
+        </h1>
+        <p class="page-subtitle">Important mentions and sentiment changes</p>
+        
+        <!-- Alert Filters -->
+        <div class="card">
+            <div class="analysis-tabs">
+                <button class="tab-btn active" data-tab="all-alerts">All Alerts</button>
+                <button class="tab-btn" data-tab="unread">Unread</button>
+                <button class="tab-btn" data-tab="critical">Critical</button>
+                <button class="tab-btn" data-tab="warning">Warning</button>
+                <button class="tab-btn" data-tab="info">Info</button>
+            </div>
+        </div>
+        
+        <!-- Alerts List -->
+        <div class="alert-list">
+            <div class="alert-card critical">
+                <div class="alert-header">
+                    <div class="alert-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Negative Sentiment Spike
+                    </div>
+                    <div class="alert-time">10 minutes ago</div>
+                </div>
+                <div class="alert-content">
+                    Negative sentiment increased by 15% in the last hour. Main topics: "customer service" (82% negative), "response time" (75% negative)
+                </div>
+                <div class="alert-actions">
+                    <button class="btn btn-secondary">Mark as read</button>
+                    <button class="btn btn-primary">View details</button>
+                </div>
+            </div>
+            
+            <div class="alert-card warning">
+                <div class="alert-header">
+                    <div class="alert-title">
+                        <i class="fas fa-exclamation-circle"></i>
+                        High Engagement Post
+                    </div>
+                    <div class="alert-time">1 hour ago</div>
+                </div>
+                <div class="alert-content">
+                    Post about "new feature" has 3x normal engagement. Sentiment: 68% positive, 12% negative, 20% neutral
+                </div>
+                <div class="alert-actions">
+                    <button class="btn btn-secondary">Mark as read</button>
+                    <button class="btn btn-primary">View post</button>
+                </div>
+            </div>
+            
+            <div class="alert-card info">
+                <div class="alert-header">
+                    <div class="alert-title">
+                        <i class="fas fa-info-circle"></i>
+                        Influencer Mention
+                    </div>
+                    <div class="alert-time">3 hours ago</div>
+                </div>
+                <div class="alert-content">
+                    Influencer @TechReviewMaster (125K followers) mentioned your product. Sentiment: 92% positive
+                </div>
+                <div class="alert-actions">
+                    <button class="btn btn-secondary">Mark as read</button>
+                    <button class="btn btn-primary">View mention</button>
+                </div>
+            </div>
+            
+            <div class="alert-card">
+                <div class="alert-header">
+                    <div class="alert-title">
+                        <i class="fas fa-chart-line"></i>
+                        Positive Trend Detected
+                    </div>
+                    <div class="alert-time">5 hours ago</div>
+                </div>
+                <div class="alert-content">
+                    Positive sentiment for "product quality" increased by 8% in the last 24 hours
+                </div>
+                <div class="alert-actions">
+                    <button class="btn btn-secondary">Mark as read</button>
+                    <button class="btn btn-primary">View analysis</button>
+                </div>
+            </div>
+            
+            <div class="alert-card critical">
+                <div class="alert-header">
+                    <div class="alert-title">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Viral Negative Post
+                    </div>
+                    <div class="alert-time">1 day ago</div>
+                </div>
+                <div class="alert-content">
+                    Post complaining about "bug in latest update" has been shared 542 times. Sentiment: 88% negative
+                </div>
+                <div class="alert-actions">
+                    <button class="btn btn-secondary">Mark as read</button>
+                    <button class="btn btn-primary">Take action</button>
+                </div>
+            </div>
+            
+            <div class="alert-card info">
+                <div class="alert-header">
+                    <div class="alert-title">
+                        <i class="fas fa-info-circle"></i>
+                        New Keyword Trend
+                    </div>
+                    <div class="alert-time">2 days ago</div>
+                </div>
+                <div class="alert-content">
+                    Keyword "easy to use" appears in 15% of positive mentions this week (up from 8% last week)
+                </div>
+                <div class="alert-actions">
+                    <button class="btn btn-secondary">Mark as read</button>
+                    <button class="btn btn-primary">View trend</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Alert Settings -->
+        <div class="card">
+            <h2 class="card-title">
+                <i class="fas fa-cog"></i>
+                Alert Settings
+            </h2>
+            
+            <div class="settings-form">
+                <div class="form-group">
+                    <label>Notification Frequency</label>
+                    <select class="form-control form-select">
+                        <option>Real-time</option>
+                        <option>Hourly digest</option>
+                        <option selected>Daily digest</option>
+                        <option>Weekly digest</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Notification Channels</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="email-notifications" checked>
+                        <label for="email-notifications">Email</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="browser-notifications" checked>
+                        <label for="browser-notifications">Browser</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="mobile-notifications">
+                        <label for="mobile-notifications">Mobile Push</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Alert Thresholds</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="critical-alerts" checked>
+                        <label for="critical-alerts">Critical Alerts (Negative sentiment > 50%)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="warning-alerts" checked>
+                        <label for="warning-alerts">Warning Alerts (Negative sentiment > 30%)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="positive-alerts">
+                        <label for="positive-alerts">Positive Alerts (Positive sentiment > 70%)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="influencer-alerts" checked>
+                        <label for="influencer-alerts">Influencer Mentions (Followers > 50K)</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Alert Keywords</label>
+                    <textarea class="form-control" rows="3" placeholder="Enter keywords to monitor (comma separated)">customer service, bug, feature, update, price</textarea>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1.5rem;">
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-primary">Save Settings</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/profile-sync.js"></script>
+</body>
+</html>
